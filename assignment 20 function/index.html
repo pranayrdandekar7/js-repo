@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function with 4 variation based on retrun type</title>
+</head>
+<body>
+    <script>
+
+         // 1.function:Argument with return type.
+    // find simple Interest //
+
+    function calSimpleInterest(p,r,t){
+        const si=p*r*t/100;
+        return si;
+    }
+
+    const simpleInterest=calSimpleInterest(5000,12,4);
+    console.log(`The Simple Interest is : ${simpleInterest}`);
+
+
+    //2. function:Argument with no return type.
+
+    function SimpleInterest(p,r,t){
+        const si=p*r*t/100;
+        console.log(`The simple interest is : ${si}`);
+
+    }
+    SimpleInterest(2000,14,5);
+
+
+    //3.function :no argument with no return type .
+
+     function calSimpleInt(){
+        const p=2000;
+        const r=12;
+        const t=4;
+        const si=p*r*t/100;
+        return si;
+    }
+    const simpleinterest=calSimpleInt();
+    console.log(`the simple interest is : ${ simpleinterest}`);
+
+    // 4.function:No Argument and No Return
+
+    function calsimpleinte(){
+       
+        const p=2000;
+        const r=12;
+        const t=4;
+        const si=p*r*t/100;
+        console.log(`the simple interst is ${si}`)
+    }
+    calsimpleinte();
+
+    </script>
+</body>
+</html>
